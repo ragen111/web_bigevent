@@ -26,9 +26,9 @@
                         <span class="textPic"></span> 个人中心
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href="">基本资料</a></dd>
-                        <dd><a href="">更换头像</a></dd>
-                        <dd><a href="">重置密码</a></dd>
+                        <dd> <a href="./user/user_info.html" target="fm">基本资料</a></dd>
+                        <dd> <a href="./user/user_avatar.html" target="fm">更换头像</a></dd>
+                        <dd> <a href="./user/user_pwd.html" target="fm">重置密码</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
@@ -41,12 +41,14 @@
 
         <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
+
                 <!-- 左侧头像区域 -->
                 <div class="userPic">
                     <img src="" class="layui-nav-img">
                     <span class="textPic"></span>
                     <span id="welcome"></span>
                 </div>
+
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <ul class="layui-nav layui-nav-tree" lay-filter="test" lay-shrink="all">
                     <li class="layui-nav-item layui-this">
@@ -77,17 +79,17 @@
                         <a href="javascript:;"> <span class="iconfont icon-user"></span>个人中心</a>
                         <dl class="layui-nav-child">
                             <dd>
-                                <a href="javascript:;">
+                                <a href="./user/user_info.html" target="fm">
                                     <i class="layui-icon layui-icon-note"></i> 基本资料
                                 </a>
                             </dd>
                             <dd>
-                                <a href="javascript:;">
+                                <a href="./user/user_avatar.html" target="fm">
                                     <i class="layui-icon layui-icon-note"></i> 更换头像
                                 </a>
                             </dd>
                             <dd>
-                                <a href="javascript:;">
+                                <a href="./user/user_pwd.html" target="fm">
                                     <i class="layui-icon layui-icon-note"></i> 重置密码
                                 </a>
                             </dd>

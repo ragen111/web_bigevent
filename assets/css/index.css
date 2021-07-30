@@ -27,10 +27,12 @@ iframe {
     height: 60px;
     line-height: 60px;
     border-bottom: 1px solid #282b33;
+    padding-left: 30px;
 }
 
 .textPic {
-    display: inline-block !important;
+    display: none;
+    display: inline-block;
     width: 35px;
     height: 35px;
     line-height: 35px;
@@ -38,16 +40,10 @@ iframe {
     border-radius: 50%;
     text-align: center;
     color: #fff;
-    margin-right: 5px;
-}
-
-.userPic .textPic {
-    display: none;
-    margin-left: 30px;
 }
 
 .layui-nav-img {
+    display: none;
     width: 35px;
     height: 35px;
-    display: none;
 }
