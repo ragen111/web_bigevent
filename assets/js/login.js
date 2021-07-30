@@ -56,6 +56,7 @@ $(function() {
     $('#form-login').on('submit', function(e) {
         // 阻止默认提交行为
         e.preventDefault();
+
         //访问用户登录接口
         $.post('/api/login', $(this).serialize(), function(res) {
             if (res.status !== 0) {
@@ -65,7 +66,8 @@ $(function() {
                 //保存token到本地存储
                 localStorage.setItem('token', res.token);
                 // 跳转到后台主页
-                location.href = '/index.html';
+
+                location.href = '/08/index.html'
             }
         })
 
