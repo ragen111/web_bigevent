@@ -10,8 +10,8 @@ $(function() {
     }
 
     // 1.3 创建裁剪区域
-    $image.cropper(options);
-    console.log(111);
+    $('#image').cropper(options);
+
 
 
     // 为上传按钮绑定点击事件
@@ -27,7 +27,7 @@ $(function() {
         }
         var file = filelist[0];
         var newImgURL = URL.createObjectURL(file);
-        $image
+        $('#image')
             .cropper('destroy') // 销毁旧的裁剪区域
             .attr('src', newImgURL) // 重新设置图片路径
             .cropper(options) // 重新初始化裁剪区域
@@ -36,7 +36,7 @@ $(function() {
     // 为确定上传按钮绑定点击事件，将头像上传服务器，并重新渲染头像
     $('#sure').on('click', function() {
         console.log(222);
-        var dataURL = $image
+        var dataURL = $('#image')
             .cropper('getCroppedCanvas', { // 创建一个 Canvas 画布
                 width: 100,
                 height: 100
